@@ -14,7 +14,9 @@
             <li><a href="examples/example-3.php">Event starts 01.04.2015. Repeat monday-wednesday-friday. No limit</a></li>
             <li><a href="examples/example-4.php">Event starts 01.04.2015. Repeat every weekend until 01.06.2015.</a></li>
             <li><a href="examples/example-5.php">Event starts 01.04.2015. Repeat monday-wednesday-friday every two weeks, until 01.06.2015.</a></li>
+            <li><a href="examples/example-6.php">Event starts 01.04.2015. Repeat monthly, until 01.12.2015.</a></li>
+            <li><a href="examples/example-7.php">Event starts 01.04.2015. Repeat yearly, no limits.</a></li>
         </ol>
-        
+
     </body>
 </html>

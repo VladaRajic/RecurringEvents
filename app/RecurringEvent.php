@@ -177,6 +177,12 @@ class RecurringEvent {
                 case "DAILY":
                     $interval = 'day';
                     break;
+                case "MONTHLY":
+                    $interval = 'month';
+                    break;
+                case "YEARLY":
+                    $interval = 'year';
+                    break;
               
         }
         
@@ -193,11 +199,8 @@ class RecurringEvent {
             
             $tmpDay = $currentDayInMonth;
             if($this->enabledDays == true){
-                $cuurentDate = '';
-                $tmpDay = $currentDayInMonth;
-                
-                
-                $day = 1;
+
+   
                 $condition = true;
                 while($condition){
                       $tmpDay++;  
@@ -218,6 +221,10 @@ class RecurringEvent {
         }elseif($this->frequency =='MWF'){
             //$interval = "day";
             $this->setDays(array("MO", "WE", "FR"));
+            $this->generatedDates[] = clone $this->sampleDate;
+        }elseif ($this->frequency == "MONTHLY") {
+            $this->generatedDates[] = clone $this->sampleDate;
+        }elseif ($this->frequency == "YEARLY") {
             $this->generatedDates[] = clone $this->sampleDate;
         }
         

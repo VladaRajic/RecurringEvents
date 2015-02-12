@@ -77,3 +77,32 @@ foreach ($result as $date){
     echo $date->format("c") . "<br>";
 }
 ```
+
+<h3>Example 6</h3>
+
+Event starts 01.04.2015. Repeat monthly, until 01.12.2015.
+
+```
+$r = new RecurringEvent();
+$r->recurr('2015-04-01 16:00:00', "MONTHLY", "Europe/Belgrade");
+$r->until('2015-12-01 16:00:00');
+$result = $r->toArray();
+
+foreach ($result as $date){
+    echo $date->format("c") . "<br>";
+}
+```
+
+<h3>Example 7</h3>
+
+Event starts 01.04.2015. Repeat yearly, no limits.
+
+```
+$r = new RecurringEvent();
+$r->recurr('2015-04-01 16:00:00', "YEARLY", "Europe/Belgrade");
+$result = $r->toArray();
+
+foreach ($result as $date){
+    echo $date->format("c") . "<br>";
+}
+```
