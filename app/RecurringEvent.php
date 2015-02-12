@@ -164,7 +164,7 @@ class RecurringEvent {
     }
     
    
-    public function generateDates(){
+    protected function generateDates(){
  
         switch($this->frequency){
 
