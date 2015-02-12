@@ -15,8 +15,6 @@
             <li><a href="examples/example-4.php">Event starts 01.04.2015. Repeat every weekend until 01.06.2015.</a></li>
             <li><a href="examples/example-5.php">Event starts 01.04.2015. Repeat monday-wednesday-friday every two weeks, until 01.06.2015.</a></li>
         </ol>
-        <?php
-        // put your code here
-        ?>
+        
     </body>
 </html>
